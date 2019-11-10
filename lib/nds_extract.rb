@@ -20,7 +20,7 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
   
-  # pp directors_database
+  pp directors_database
   
   # directors_gross = {}
   # row_index = 0
@@ -73,6 +73,11 @@ def directors_totals(nds)
   movies_gross = 0
   
   while counter < nds.length do
+    inner_counter = 0
+    while inner_counter < nds[:movies].length do
+      
+      inner_counter += 1
+    end
     directors_gross[nds[counter][:name]] = movies_gross
     counter += 1
   end
